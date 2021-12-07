@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href='./styles/grid.css'>
+  <link rel="stylesheet" type="text/css" href='./styles/normalize.css'>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;700&display=swap" rel="stylesheet">  
+  <link rel="stylesheet" type="text/css" href="./styles/styles.css">
+  <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper/swiper-bundle.min.css"
+/>
+
+
+  <title>Barber Poc </title>
+</head>
+<body> 
+  <header> 
+
+  </header>
+  <main>
+
+ <div class='organizebuttons'>
+  <button class='first-button' id='services'> Serviços </button>
+  <button  class='third-button'> <a href='#agenda'> Marque sua agenda </a> </button>
+  <button class='second-button'> <a href="#sessaocadastro"> Cadastro/Login </a></button>
+  <button class='fourth-button'> Fale conosco </button>
+ </div>
+ 
+  <div id='tableservice'> 
+  </div>
+  <section class='content-swipper' > 
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"> <img class='imground' src='./assets/galeria/1.jpg' alt='hoomem'> </div>
+        <div class="swiper-slide"><img class='imground' src='./assets/galeria/2.jpg' alt='homem'></div>
+        <div class="swiper-slide"><img class='imground' src='./assets/galeria/3.jpg' alt='homem'></div>
+        <div class="swiper-slide"><img class='imground' src='./assets/galeria/4.jpg' alt='homem'></div>
+        <div class="swiper-slide"><img class='imground' src='./assets/galeria/5.jpg' alt='homem'></div>
+        <div class="swiper-slide"><img class='imground' src='./assets/galeria/6.jpg' alt='homem'></div>
+        <div class="swiper-slide"><img class='imground' src='./assets/galeria/7.jpg' alt='homem'></div>
+        <div class="swiper-slide"><img class='imground' src='./assets/galeria/8.jpg' alt='homem'></div>
+        <div class="swiper-slide"><img class='imground'  src='./assets/galeria/9.jpg' alt='homem'></div>
+        <div class="swiper-slide"><img class='imground' src='./assets/galeria/10.jpg' alt='homem'></div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </section>
+  <section id='agenda'>
+    <div class='formagenda'> 
+      <h3 class='titleagenda'>Solicite seu horário </h3>
+      <br>
+      <label for="nomesocialagenda"> Nome Social: </label>
+      <br>
+      <input type="text" name="nomesocialagenda" id="nomesocialagenda">
+      <br>	 
+      <label for="servico"> Serviços: </label>
+      <br>
+      <select name="servico" id="selectservice">
+        <option value="corte"> corte </option>
+        <option value="sobrancelha"> sobrancelha</option>
+        <option value="coloracao"> coloração </option>
+      </select>
+      <br>
+      <label for="datamarcada"> Nome Social: </label>
+      <br>
+      <input id="datamarcada" type="date" required>
+      <br>
+      <label for="horariomarcado">Escolha um horário:</label>
+      <br>
+      <input type="time" id="horariomarcado" name="horariomarcado"
+         min="09:00" max="20:30" required>
+  <br>
+  <br>
+  <button  class='third-button' id="agendamento"> Solicite atendimento </button>
+  <br>
+  <br>
+  <h3 class='agendaend'> ... e aguarde a confirmação </h3>
+  </div>
+  </section>
+  <section class='content-swipper' > 
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"> <img class='imgbig' src='./assets/galeria/11.jpg' alt='hoomem'> </div>
+        <div class="swiper-slide"><img class='imgsmall' src='./assets/galeria/12.jpg' alt='homem'></div>
+        <div class="swiper-slide"><img class='imgbig' src='./assets/galeria/13.jpg' alt='homem'></div>
+        <div class="swiper-slide"><img  class='imgsmall' src='./assets/galeria/14.jpg' alt='homem'></div>
+        <div class="swiper-slide"><img class='imgbig' src='./assets/galeria/15.jpg' alt='homem'></div>
+        <div class="swiper-slide"><img  class='imgsmall' src='./assets/galeria/16.jpg' alt='homem'></div>
+        <div class="swiper-slide"><img class='imgbig' src='./assets/galeria/17.jpg' alt='homem'></div>
+        <div class="swiper-slide"><img  class='imgsmall' src='./assets/galeria/18.jpg' alt='homem'></div>
+        <div class="swiper-slide"><img class='imgbig' src='./assets/galeria/19.jpg' alt='homem'></div>
+        <div class="swiper-slide"><img class='imgsmall' src='./assets/galeria/20.jpg' alt='homem'></div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </section>
+  <section id="areadocliente">
+    <h2> Área do Cliente </h2>
+    <p class='textclient'> Cadastre-se para consultar seus horários, e receba promoções e novidades sobre o mundo da beleza. </p>
+    <div class='tablecadastro' id='sessaocadastro'>
+      <br>
+      <div class='form'>
+      <h3> Cadastro </h3>
+      <br>
+      <label for="nomecompleto"> Nome: </label>
+      <br>
+      <input type="text" id="nomecompleto">	
+      <br>
+      <label for="nomesocial"> Nome Social: </label>
+      <br>
+      <input type="text" name="nomesocial" id="nomesocial">
+      <br>	 
+      <label for="idade"> Idade: </label> 
+      <br> 
+      <input type="number" name="idade" id="idade">
+      <br>    
+      <label for ="genero"> Gênero: </label>
+      <br>
+      <input type="text" name="genero" id="genero">	 
+      <br>
+      <label for ="email"> E-mail: </label>
+      <br>
+      <input for ="email" name="email" id="email"> 
+      <br>	 
+      <label for ="telefone"> Telefone: </label>
+      <br>
+      <input for ="number" name="telefone" id="telefone"> 
+      <br>	 
+      <label for="senha"> Senha: </label>
+      <br>
+      <input for="senha" name="senha" id="senha"> 
+      <br>	
+      <br>
+      <button id='cadastrobutton' class='second-button'> Cadastrar </button> 
+    </div>   
+    <div class='login'>
+      <h3> Login </h3>
+      <br>
+      <label for="senha"> Senha: </label>
+      <br>
+      <input for="senha" name="senha" id="senha"> 
+      <br>	
+      <label for="nomesocial"> Nome Social: </label>
+      <br>
+      <input type="text" name="nomesocial" id="nomesocial">
+      <br> 
+      <br>
+      <button  class='second-button' id='loginbutton'> Logar </button> 
+    </div>
+    </div>
+</section>
+ </main>
+ <footer>
+  <div>
+    <ul class='social-link'>
+        <li> <a href='#'>  <ion-icon name="logo-instagram" class='logo-instagram'></ion-icon> @barberpoc </a> </li>
+         <li> <a href='#'> <ion-icon name="logo-facebook" class='logo-facebook'></ion-icon> </a> /BarberPoc</li>
+    </ul>
+
+    <p class='copyright'>Copyright &copy; 2022, Marja de Sordi</p>
+</div>
+
+ </footer>
+</body>
+
+<script src='./scripts/buttons/buttonsone.js'> </script>
+<script src='./scripts/buttons/buttontwo.js'> </script>
+<script src='./scripts/buttons/buttontree.js'> </script>
+<script src='./scripts/buttons/buttonfour.js'></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<!-- Initialize Swiper -->
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 5,
+        spaceBetween: 10,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>
+
+
+
+</html>
